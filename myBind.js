@@ -1,7 +1,6 @@
 Function.prototype.myBind = function(context) {
-  const func = this;
   return () => {
-    func.apply(context);
+    this.apply(context);
   };
 } ;
 
